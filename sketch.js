@@ -7,15 +7,20 @@ var Chile;
 var Japan;
 var Indonesia;
 var Mexico;
+var Italy;
+var Chile2;
+
 var Cover;
 var fontMetaRegular, fontMetaBold, fontMetaMedium, fontOCRB;
 
 function preload() {
    Cover = loadImage("images/gif-a-2-orizzontale.gif");
-   Chile = loadImage("images/Chile2.jpg");    //9.5
-   Japan = loadImage("images/Japan.jpg");    //9.0
-   Indonesia = loadImage("images/Indonesia.jpg"); //8.5
-   Mexico = loadImage("images/Mexico.jpg"); //8.0
+   Chile = loadImage("images/chile1.jpg");    //9.5
+   Japan = loadImage("images/japon.jpg");    //9.0
+   Indonesia = loadImage("images/indonesia.jpg"); //8.5
+   Mexico = loadImage("images/mexico.jpg"); //8.0
+   Chile2 = loadImage("images/chile2.jpg"); //7.7
+   Italy = loadImage("images/italia.jpg"); //6.0
    
    fontMetaRegular = loadFont("assets/MetaPro-Normal.otf");
    fontMetaBold = loadFont("assets/MetaPro-Bold.otf");
@@ -134,7 +139,7 @@ function draw(){
 
       else if(magnitude > 6 && magnitude <= 7){
          
-         image(Japan,0,0,windowWidth,windowHeight);
+         image(Italy,0,0,windowWidth,windowHeight);
          //tap on the arrow
          /*if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
